@@ -1,18 +1,142 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="./css/bootstrap.min.css">
-</head>
-<body>
-    <h2>hello world</h2>
+    <link rel="stylesheet" href="./css/basic.css">
+    <link rel="stylesheet" href="./css/reset.css">
+    <style>
+        .navbar {
+            margin: 0;
+        }
 
-        <!-- 导入jquery依赖 -->
-        <script src="./js/jquery-3.6.0.min.js"></script>
-        <!-- 导入bootstrap -->
-        <script src="./js/bootstrap.min.js"></script>
+        #mine {
+            margin: 0;
+            width: 40%;
+            border-radius: 999px;
+        }
+
+        .bg-1 {
+            margin: 0;
+            background-color: #1abc9c;
+            /* Green */
+            color: #ffffff;
+        }
+
+        .bg-2 {
+            background-color: #474e5d;
+            /* Dark Blue */
+            color: #ffffff;
+        }
+
+        .bg-3 {
+            background-color: #ffffff;
+            /* White */
+            color: #555555;
+        }
+
+        .bg-4 {
+            background-color: #2f2f2f;
+            /* Black Gray */
+            color: #fff;
+        }
+
+        .bg-5 {
+            background-color: skyblue;
+            /* Green */
+            color: #fff;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                    data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">关于我</a>
+            </div>
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#">我是谁</a></li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+                            aria-expanded="false">我能做什么 <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#BOOTSTRAP">BOOTSTRAP</a></li>
+                            <li><a href="#VUE">VUE</a></li>
+                            <li><a href="#REACT">REACT</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a href="#study">学习经历</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div><!-- /.navbar-collapse -->
+        </div><!-- /.container-fluid -->
+    </nav>
+
+    <div class=".container text-center bg-1">
+        <h2>我是谁</h2>
+        <img id="mine" src="./R-C.png">
+        <p>我是就读于广州科技职业技术大学的毕业生李嘉伟,我的专业是计算机应用工程,能熟练运用VSC进行前端开发</p>
+    </div>
+
+    <div class=".container text-center bg-2" id="BOOTSTRAP">
+        <h3>BOOTSTRAP</h3>
+        <div class="row">
+            <div class="col-md-4 col-sm-12">1</div>
+            <div class="col-md-4 col-sm-12">2</div>
+            <div class="col-md-4 col-sm-12">3</div>
+        </div>
+    </div>
+
+    <div class=".container text-center bg-3" id="VUE">
+        <h3>VUE</h3>
+        <div class="row">
+            <div class="col-md-4 col-sm-12">1</div>
+            <div class="col-md-4 col-sm-12">2</div>
+            <div class="col-md-4 col-sm-12">3</div>
+        </div>
+    </div>
+
+    <div class=".container text-center bg-4" id="REACT">
+        <h3>REACT</h3>
+        <div class="row">
+            <div class="col-md-4 col-sm-12">1</div>
+            <div class="col-md-4 col-sm-12">2</div>
+            <div class="col-md-4 col-sm-12">3</div>
+        </div>
+    </div>
+
+    <div class=".container text-center bg-5" id="study">
+        <h3>学习经历</h3>
+        <div class="row">
+            <div class="col-md-12">1</div>
+            <div class="col-md-12">2</div>
+            <div class="col-md-12">3</div>
+        </div>
+
+    </div>
+
+
+    <footer class=".container text-center bg-2">
+        <h3>脚注</h3>
+    </footer>
+
+    <!-- 导入jquery依赖 -->
+    <script src="./js/jquery-3.6.0.min.js"></script>
+    <!-- 导入bootstrap -->
+    <script src="./js/bootstrap.min.js"></script>
 </body>
+
 </html>
